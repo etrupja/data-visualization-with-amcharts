@@ -18,14 +18,14 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0"></ul>
             <div class="form-inline my-2 my-lg-0">
-                <button class="btn btn-outline-success my-2 my-sm-0" id="dashboardBtn">Summary</button>
+                <button class="btn btn-outline-success my-2 my-sm-0" id="dashboardBtn">Top 5 Countries</button>
             </div>
         </div>
     </nav>
 
     <div class="main-content text-center">
-        <div id="timeLine">Timeline graph</div>
-        <div class="graph-hidden" id="summaryPie">Pie graph</div>
+        <div id="worldwide">Worldwide stats</div>
+        <div class="graph-hidden" id="top5Countries">Top 5 countries stats</div>
     </div>
 
     <!-- Add reference to jquery -->
@@ -33,6 +33,6 @@
 
     <!-- Add references to script files -->
     <script src="./scripts/scripts.js"></script>
-    <script src="./scripts/c3.js"></script>
+    <script onload="loadTimeLine();"  src="./scripts/c3.js"></script>
 </body>
 </html>

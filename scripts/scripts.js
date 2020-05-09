@@ -1,7 +1,13 @@
 $("#dashboardBtn").click(function () {
     $(this).text(function(i, text){
-        $('#timeLine').toggle();
-        $('#summaryPie').toggle();
-        return text === "Timeline" ? "Summary" : "Timeline";
+        $('#worldwide').toggle();
+        $('#top5Countries').toggle();
+        if(text === "Worldwide"){
+            loadTimeLine();
+            return "Top 5 Countries";
+        } else {
+            loadSummary();
+            return "Worldwide";
+        }
     })
 });
