@@ -1,7 +1,7 @@
-function loadTimeLine(){
-    console.log('Load timeline called');
+function loadWorldWideStats(){
+    console.log('loadWorldWideStats called');
 }
 
-function loadSummary(){
-    console.log('Load summary called');
+function loadTop5Countries(){
+    console.log('loadTop5Countries called');
 } 

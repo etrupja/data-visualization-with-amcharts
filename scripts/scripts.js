@@ -3,10 +3,10 @@ $("#dashboardBtn").click(function () {
         $('#worldwide').toggle();
         $('#top5Countries').toggle();
         if(text === "Worldwide"){
-            loadTimeLine();
+            loadWorldWideStats();
             return "Top 5 Countries";
         } else {
-            loadSummary();
+            loadTop5Countries();
             return "Worldwide";
         }
     })
